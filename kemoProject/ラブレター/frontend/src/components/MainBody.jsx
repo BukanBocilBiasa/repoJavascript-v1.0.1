@@ -1,8 +1,7 @@
-function MainBody({ children }) {
+export default function MainBody({ children }) {
   return (
     <section>
       <div>{children}</div>
     </section>
   );
 }
-export default MainBody;
