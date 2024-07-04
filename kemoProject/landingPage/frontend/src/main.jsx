@@ -5,11 +5,16 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 //import pages
 import Home from "./pages/Home";
+import Responsive from "./pages/Responsive";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/responsive",
+    element: <Responsive />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

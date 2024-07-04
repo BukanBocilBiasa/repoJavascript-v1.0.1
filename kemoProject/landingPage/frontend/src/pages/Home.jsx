@@ -1,66 +1,73 @@
-import { MyHeader } from "../components/MyHeader";
-import { MainBody } from "../components/MainBody";
-import { Footer } from "../components/Footer";
+import React from "react";
+import MyHeader from "../components/MyHeader";
+import MainBody from "../components/MainBody";
+import Footer from "../components/Footer";
+import Carousel from "../components/Carousel";
 
 function Home() {
   return (
     <MainBody>
       <MyHeader />
-      <div className="carousel w-full">
-        <div id="slide1" className="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-            className="w-full"
-          />
-          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide4" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide2" className="btn btn-circle">
-              ❯
-            </a>
+      <Carousel />
+      <div className="flex justify-center gap-4">
+        <div className="card glass w-96">
+          <figure>
+            <img
+              src="https://cdn.pixabay.com/photo/2020/03/30/07/18/nude-4983343_960_720.jpg"
+              alt="car!"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div className="card-actions justify-end">
+              <button className="btn btn-primary">Learn now!</button>
+            </div>
           </div>
         </div>
-        <div id="slide2" className="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-            className="w-full"
-          />
-          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide1" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide3" className="btn btn-circle">
-              ❯
-            </a>
+        <div className="card glass w-96">
+          <figure>
+            <img
+              src="https://cdn.pixabay.com/photo/2021/07/01/17/32/woman-6379931_1280.jpg"
+              alt="car!"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div className="card-actions justify-end">
+              <button className="btn btn-primary">Learn now!</button>
+            </div>
           </div>
         </div>
-        <div id="slide3" className="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
-            className="w-full"
-          />
-          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide2" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide4" className="btn btn-circle">
-              ❯
-            </a>
+        <div className="card glass w-96">
+          <figure>
+            <img
+              src="https://cdn.pixabay.com/photo/2020/03/04/08/04/nude-4900779_1280.jpg"
+              alt="car!"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div className="card-actions justify-end">
+              <button className="btn btn-primary">Learn now!</button>
+            </div>
           </div>
         </div>
-        <div id="slide4" className="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
-            className="w-full"
-          />
-          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide3" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide1" className="btn btn-circle">
-              ❯
-            </a>
+        <div className="card glass w-96">
+          <figure>
+            <img
+              src="https://cdn.pixabay.com/photo/2018/03/14/13/58/naked-3225267_1280.jpg"
+              alt="car!"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div className="card-actions justify-end">
+              <button className="btn btn-primary">Learn now!</button>
+            </div>
           </div>
         </div>
       </div>
